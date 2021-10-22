@@ -21,13 +21,15 @@ $(function(){
         responsive: [{
             breakpoint: 1100,
             settings: {
-              slidesToShow: 4
+              slidesToShow: 4,
+              slidesToScroll: 1,
             }
           },
           {
             breakpoint: 820,
             settings: {
               dots: false,
+              arrows: true,
               speed: 1500,
               slidesToShow: 3
             }
@@ -36,6 +38,7 @@ $(function(){
             breakpoint: 550,
             settings: {
               dots: false,
+              arrows: true,
               speed: 1500,
               slidesToShow: 2
             }
@@ -44,18 +47,11 @@ $(function(){
             breakpoint: 350,
             settings: {
               dots: false,
+              arrows: true,
               speed: 1500,
               slidesToShow: 1
           }
         }] 
-    });
-
-    $('.acceptance-tabs__item').on('click', function(e) {
-        e.preventDefault();
-        $('.acceptance-tabs__item').removeClass('acceptance-tabs__item--active');
-        $(this).addClass('acceptance-tabs__item--active');
-        $('.acceptance-tabs__content').removeClass('acceptance-tabs__content--active');
-        $($(this).attr('href')).addClass('acceptance-tabs__content--active');
     });
 
     let hamb = document.querySelector(".burger")
@@ -86,49 +82,53 @@ $(function(){
       }
       else{
         $('.sub-menu').show();
-       
       }
     });
 
-    $('.section-select__top').on("click", function(){
-      $('.section-select').slideToggle();
-      $('.faq-icon').toggleClass('active');
+  // Tabs
+
+    $('.application-tabs__item').on('click', function(e) {
+          e.preventDefault();
+          $('.application-tabs__item').removeClass('application-tabs__item--active');
+          $(this).addClass('application-tabs__item--active');
+          $('.application-tabs__content').removeClass('application-tabs__content--active');
+          $($(this).attr('href')).addClass('application-tabs__content--active');
     });
 
-    
-    // Select Script
-
-    $('.select-form .select__title').on("click", function(){
-      if($(this).siblings('.search-select').hasClass('active')){
-          $(this).siblings('.search-select').slideUp().removeClass('active');
-      } else{
-          $('.search-select').slideUp().removeClass('active');
-          $(this).siblings('.search-select').slideDown().addClass('active');
-      }
+    $('.structure-tabs__item').on('click', function(e) {
+        e.preventDefault();
+        $('.structure-tabs__item').removeClass('structure-tabs__item--active');
+        $(this).addClass('structure-tabs__item--active');
+        $('.structure-tabs__content').removeClass('structure-tabs__content--active');
+        $($(this).attr('href')).addClass('structure-tabs__content--active');
     });
 
-    $('.search-select').on("click", function(event){
-      var target = event.target;
-      var txt, val, cls;
+    $('.registersearch-tabs__item').on('click', function(e) {
+        e.preventDefault();
+        $('.registersearch-tabs__item').removeClass('registersearch-tabs__item--active');
+        $(this).addClass('registersearch-tabs__item--active');
+        $('.registersearch-tabs__content').removeClass('registersearch-tabs__content--active');
+        $($(this).attr('href')).addClass('registersearch-tabs__content--active');
+    });
 
-      if ($(target).hasClass('search-select__item-link')){
-          txt = $(target).text();
-          $(this).children().children('.search-select__item-link').removeClass('active');
-          cls = $(target).attr('class').slice(8); 
-          $(target).addClass('active');
-          val = $(target).attr('data-attr');
-      }
+    $('.page-tabs__item').on('click', function(e) {
+        e.preventDefault();
+        $('.page-tabs__item').removeClass('page-tabs__item--active');
+        $(this).addClass('page-tabs__item--active');
+        $('.page-tabs__content').removeClass('page-tabs__content--active');
+        $($(this).attr('href')).addClass('page-tabs__content--active');
+    });
 
+    const programs = document.querySelectorAll('.program')
+    programs.forEach((program) => {
+      program.addEventListener('click', () => {
+            program.classList.toggle('active');
+      });
     });
 
 
 });
 
-$(document).ready(function(){
-  $('.developments__top-icon').on('click', () => {
-    $('.developments__share').toggle();
-  })
-})
 
 
 

@@ -23,8 +23,9 @@
                                 <a class="header-language en-lang" href="/en">ENG</a>
                             </div>
                             <div class="header__contacts">
-                                <a class="header__contacts-tel header-tel" href="tel:+ 7 705 782 60 77" >+ 7 705 782 60 77</a>
-                                <a class="header__contacts-mail header-mail" href="/">arqainfo@gmail.com</a>
+                                <a class="header__contacts-tel header-tel" href="tel:+7 777 522 29 22" >+7 777 522 29 22</a>
+                                <a class="header__contacts-tel" href="tel:+7 7172 79 25 50" >+7 7172 79 25 50</a>
+                                <a class="header__contacts-mail header-mail" href="mailto:arqainfo@gmail.com">arqainfo@gmail.com</a>
                             </div>
                             <div class="burger">
                                 <span class="menu_btn">
@@ -41,20 +42,6 @@
                             <div class="header-nav">
                                 <ul class="header-nav__items">
                                     <li class="header-nav__item"><a class="header-nav__link" href="">Главная</a></li>
-                                    <li class="header-nav__item"><a class="header-nav__link" href="">Реестр</a></li>
-                                    <li class="header-nav__item"><a class="header-nav__link" href="">Заявка</a></li>
-                                    <li class="header-nav__item"><a class="header-nav__link" href="">Аккредитация</a></li>
-                                    <li class="header-nav__item under" id="header-nav__item-under"><a class="header-nav__link sub-btn active" href="javascript:;">Система образования в Казахстане</a>
-                                        <div class="sub-menu">
-                                            <ul class="sub-menu__list">
-                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">О системе образования</a></li>
-                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Техническое и профессиональное образование</a></li>
-                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Высшее и послевузовское образование</a></li>
-                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Болонский процесс</a></li>
-                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Туринский процесс</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
                                     <li class="header-nav__item under" id="header-nav__item-under"><a class="header-nav__link sub-btn" href="javascript:;">Об ARQA</a>
                                         <div class="sub-menu">
                                             <ul class="sub-menu__list">
@@ -66,6 +53,20 @@
                                             </ul>
                                         </div>
                                     </li>
+                                    <li class="header-nav__item under" id="header-nav__item-under"><a class="header-nav__link sub-btn active" href="javascript:;">Система образования в Казахстане</a>
+                                        <div class="sub-menu">
+                                            <ul class="sub-menu__list">
+                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">О системе образования</a></li>
+                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Техническое и профессиональное образование</a></li>
+                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Высшее и послевузовское образование</a></li>
+                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Болонский процесс</a></li>
+                                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Туринский процесс</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header-nav__item"><a class="header-nav__link" href="">Аккредитация</a></li>
+                                    <li class="header-nav__item"><a class="header-nav__link" href="">Заявка</a></li>
+                                    <li class="header-nav__item"><a class="header-nav__link" href="">Реестр</a></li>
                                     <li class="header-nav__item"><a class="header-nav__link" href="">События</a></li>
                                     <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
                                 </ul>
@@ -78,143 +79,101 @@
         <div class="under_nav">
             <div class="close_menu"></div>
         </div>
-    </header>  
+    </header> 
 
     <section class="registersearch section">
         <div class="container">
-            <div class="mission__titles">
-                <a class="way__page" href="">Главная</a>
-                <span class="arrow__icon-to-right">|</span>
-                <span class="page__title">Реестр</span>
-            </div>
-            <h2 class="title">реестр</h2>
+            <ul class="breadcrumb">
+                <li><a class="way__page" href="#">Главная</a></li>
+                <li><span class="arrow__icon-to-right">|</span></li>
+                <li class="page__title">Реестр</li>
+            </ul>
+            <h1 class="title">реестр</h1>
             <p class="subtitle">Реестр аккредитованных в ARQA организаций образования и образовательных программ, дата обновления реестра</p>
-            <form class="section-search">
-                <div class="search">
-                    <div class="search-form" id="search-form" action="/search" method="GET">
-                        <a class="search-button" type="submit"></a>
-                        <input class="search-input" type="text" placeholder="">
-                    </div>
-                    <a class="btn" type="submit">подтвердить</a>
+            <div class="registersearch__tabs">
+                <div class="registersearch-tabs__items">
+                    <a href="#tab-1" class="registersearch-tabs__item registersearch-tabs__item--active">Институциональная</a>
+                    <a href="#tab-2" class="registersearch-tabs__item">Специализированная</a>
                 </div>
-                <div class="main-select">
-                    <div class="section-select__item">
-                        <span class="section-select__item-title">Страна</span>
-                        <div class="select-form">
-                            <p class="select__title">Выберите группу</p>
-                            <ul class="search-select">
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки1</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки2</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки3</a></li>
-                            </ul>
-                            <img class="select-btn" src="img/selectbtn.svg" alt="">
+                <div class="registersearch-tabs__contentbox">
+                    <div class="registersearch-tabs__content registersearch-tabs__content--active" id="tab-1">
+                        <div class="registersearch-tab__items">
+                            <div class="registersearch__item-top">
+                                <div class="registersearch__label" for="label">Вид Аккредитации:</div>
+                                <div class="registersearch__checkbox">
+                                    <label class="registersearch__checkbox-label">
+                                        <input id="registersearch__input" class="registersearch__input" type="radio" name="name1">
+                                        <div class="registersearch__radio"></div>
+                                        <div class="registersearch__label-text">Институциональная</div> 
+                                    </label>
+                                    <label class="registersearch__checkbox-label">
+                                        <input id="registersearch__input" class="registersearch__input" type="radio" name="name1">
+                                        <div class="registersearch__radio"></div>
+                                        <div class="registersearch__label-text">Специализированная</div> 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="registersearch__item-top">
+                                <div class="registersearch__label" for="label">Название вуза:</div>
+                                <input class="registersearch__item-input" type="text">
+                            </div>
+                            <div class="registersearch__item-top">
+                                <div class="registersearch__label" for="label"></div>
+                                <a class="registersearch__btn" href="#" type="submit">Применить</a>
+                            </div>
                         </div>
+                        <div class="registersearch__accreditation-year">Год аккредитации: 2020-2021 гг.</div>
                     </div>
-                    <div class="section-select__item">
-                        <span class="section-select__item-title">Вид аккредитации</span>
-                        <div class="select-form">
-                            <p class="select__title">Институциональная</p>
-                            <ul class="search-select">
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки1</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки2</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки3</a></li>
-                            </ul>
-                            <img class="select-btn" src="img/selectbtn.svg" alt="">
+
+                    <div class="registersearch-tabs__content" id="tab-2">
+                        <div class="registersearch-tab__items">
+                            <div class="registersearch__item-top">
+                                <div class="registersearch__label" for="label">Вид Аккредитации:</div>
+                                <div class="registersearch__checkbox">
+                                    <label class="registersearch__checkbox-label">
+                                        <input id="registersearch__input" class="registersearch__input" type="radio" name="name1">
+                                        <div class="registersearch__radio"></div>
+                                        <div class="registersearch__label-text">Институциональная</div> 
+                                    </label>
+                                    <label class="registersearch__checkbox-label">
+                                        <input id="registersearch__input" class="registersearch__input" type="radio" name="name1">
+                                        <div class="registersearch__radio"></div>
+                                        <div class="registersearch__label-text">Специализированная</div> 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="registersearch__item-top">
+                                <div class="registersearch__label" for="label">Название вуза:</div>
+                                <input class="registersearch__item-input" type="text">
+                            </div>
+                            <div class="registersearch__item-top">
+                                <div class="registersearch__label" for="label"></div>
+                                <a class="registersearch__btn" href="#" type="submit">Применить</a>
+                            </div>
                         </div>
+                        <div class="registersearch__accreditation-year">Год аккредитации: 2020-2021 гг.</div>
                     </div>
-                    <div class="section-select__item">
-                        <span class="section-select__item-title">Вид организации</span>
-                        <div class="select-form">
-                            <p class="select__title">Все организации образования</p>
-                            <ul class="search-select">
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки1</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки2</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки3</a></li>
-                            </ul>
-                            <img class="select-btn" src="img/selectbtn.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="section-select__top">
-                    <p class="section-select__top-text">Дополниетельные фильтры</p>
-                    <div class="faq__bottom"></div>
-                    <div class="section-select__border">
-                        <img class="faq-icon" src="img/selectbtn.svg" alt="">
-                </div>
-                </div>
-                <div class="section-select">
-                    <div class="section-select__item">
-                        <span class="section-select__item-title">Срок аккредитации</span>
-                        <div class="select-form">
-                            <p class="select__title">Все сроки</p>
-                            <ul class="search-select">
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки1</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки2</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки3</a></li>
-                            </ul>
-                            <img class="select-btn" src="img/selectbtn.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="section-select__item">
-                        <span class="section-select__item-title">Срок аккредитации</span>
-                        <div class="select-form">
-                            <p class="select__title">Все сроки</p>
-                            <ul class="search-select">
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки1</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки2</a></li>
-                                <li class="search-select__item"><a class="search-select__item-link" href="#">Все сроки3</a></li>
-                            </ul>
-                            <img class="select-btn" src="img/selectbtn.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="select__form">
-                        <div class="select__item select">
-                            <span class="section-select__item-title"></span>
-                            <p class="form-select">
-                                <input class="select__input" type="checkbox" name="value" id="value" required>
-                            </p>
-                            <p class="form-select__text">реаккредитация</p>
-                        </div>
-                        <div class="select__item">
-                            <span class="section-select__item-title"></span>
-                            <p class="form-select">
-                                <input class="select__input" type="checkbox" name="value" id="value" required>
-                            </p>
-                            <p class="form-select__text">Первичная (Ex-Ante)</p>
-                        </div>
-                    </div>
-                </div>
-            </form> 
-            <h2 class="title">результаты поиска</h2>
-            <p class="subtitle">Общее количество найденных объектов: 2</p>
-            <div class="registersearch__items">
-                <div class="registersearch__item-title">Университет “Астана”</div>
-                <div class="registersearch__item">
-                    <ul class="nav">
-                        <li class="nav__item nav__item-firstline" ><strong>Страна: </strong><span>Республика Казахстан</span></li>
-                        <li class="nav__item"><strong>Вид организации образования: </strong><span>Организация высшего и послевузовского образования</span></li>
-                    </ul>
-                    <ul class="nav">
-                        <li class="nav__item nav__item-firstline"><strong>Вид аккредитации: </strong><span>Программная аккредитация</span></li>
-                        <li class="nav__item"><strong>Срок аккредитации: </strong><span>1 год</span></li>
-                    </ul>
-                    <a class="registersearch__item-link" href="#">подробнее</a>
+
                 </div>
             </div>
+            <h6 class="registersearch__title">результаты поиска</h6>
             <div class="registersearch__items">
-                <div class="registersearch__item-title">Университет “Астана”</div>
+                <a class="registersearch__item-icon"><img src="img/enu.jpg" alt="Университет “Астана”"></a>
                 <div class="registersearch__item">
-                    <ul class="registersearch-nav">
-                        <li class="registersearch-nav__item registersearch-nav__item-firstline" ><strong>Страна: </strong><span>Республика Казахстан</span></li>
-                        <li class="registersearch-nav__item"><strong>Вид организации образования: </strong><span>Организация высшего и послевузовского образования</span></li>
-                    </ul>
-                    <ul class="registersearch-nav">
-                        <li class="registersearch-nav__item registersearch-nav__item-firstline"><strong>Вид аккредитации: </strong><span>Программная аккредитация</span></li>
-                        <li class="registersearch-nav__item"><strong>Срок аккредитации: </strong><span>1 год</span></li>
-                    </ul>
-                    <a class="registersearch__item-link" href="#">подробнее</a>
+                    <h6 class="registersearch__item-title">Университет “Астана”</h6>
+                    <div class="registersearch__contentbox">
+                        <ul class="registersearch-nav">
+                            <li class="registersearch-nav__item"><strong>Страна: </strong><span>Республика Казахстан</span></li>
+                            <li class="registersearch-nav__item"><strong>Вид организации образования: </strong><span>Организация высшего и послевузовского образования</span></li>
+                        </ul>
+                        <ul class="registersearch-nav">
+                            <li class="registersearch-nav__item"><strong>Вид аккредитации: </strong><span>Программная аккредитация</span></li>
+                            <li class="registersearch-nav__item"><strong>Срок аккредитации: </strong><span>1 год</span></li>
+                        </ul>
+                        <a class="registersearch__item-link" href="#">подробнее</a>
+                    </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -259,12 +218,12 @@
                     </div>
                     <div class="footer-nav__contacts">
                         <ul class="footer-nav__items">
-                            <li class="footer-nav__item address"><a class="footer-nav__link address__link" href="#">Нур-Султан, пр. Бауыржан Момышулы, 19а</a></li>
+                            <li class="footer-nav__item address"><a class="footer-nav__link footer-nav__link-address" href="#">Нур-Султан, пр. Бауыржан Момышулы, 19а</a></li>
                             <li class="footer-nav__item tel">
                                 <a class="footer-nav__link" href="tel:+ 7 705 782 60 77">+ 7 705 782 60 77,</a> <br>
                                 <a class="footer-nav__link" href="tel:+ + 7 705 782 60 78">+ 7 705 782 60 78</a>
                             </li>
-                            <li class="footer-nav__item mail"><a class="footer-nav__link" href="#">infoarqa@mail.ru</a></li>
+                            <li class="footer-nav__item mail"><a class="footer-nav__link" href="mailto:infoarqa@mail.ru">infoarqa@mail.ru</a></li>
                         </ul>
                     </div>
                 </div>
@@ -273,8 +232,8 @@
         <div class="container">
             <div class="footer__bottom">
                 <p class="footer__bottom-text">©2021. Все права защищены.</p>
-                <p class="footer__bottom-text">Разработка сайтов
-                    <a class="footer__bottom-link" href="https://astanacreative.kz/" target="_blank" rel="noopener noreferrer">AstanaCreative</a></p>
+                <p class="footer__bottom-text">
+                    <a class="footer__bottom-link" href="https://astanacreative.kz/" target="_blank" rel="noopener noreferrer">Создание сайтов в Астане</a></p>
             </div>
         </div>
     </footer>
