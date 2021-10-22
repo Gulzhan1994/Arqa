@@ -130,6 +130,39 @@ $(function(){
 });
 
 
+// Pop-up1
+
+const openPopUp = document.getElementById('open_pop_up');
+const closePopUp = document.getElementById('pop_up_close');
+const popUp = document.getElementById('pop_up');
+
+openPopUp.addEventListener('click', function(e) {
+  e.preventDefault();
+  popUp.classList.add('active');
+
+})
+
+closePopUp.addEventListener('click', () => {
+  popUp.classList.remove('active');
+})
+
+// Pop-up2
+
+const openPopUp1 = document.getElementById('open_pop_up1');
+const closePopUp1 = document.getElementById('pop_up_close1');
+const popUp1 = document.getElementById('pop_up1');
+
+openPopUp1.addEventListener('click', function(e) {
+  e.preventDefault();
+  popUp.classList.add('active');
+
+})
+
+closePopUp1.addEventListener('click', () => {
+  popUp.classList.remove('active');
+})
+
+
 
 
 

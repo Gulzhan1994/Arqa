@@ -25,7 +25,7 @@
                             <div class="header__contacts">
                                 <a class="header__contacts-tel header-tel" href="tel:+7 777 522 29 22" >+7 777 522 29 22</a>
                                 <a class="header__contacts-tel" href="tel:+7 7172 79 25 50" >+7 7172 79 25 50</a>
-                                <a class="header__request" href="#">Оставить заявку</a>
+                                <a class="header__request" id="open_pop_up1" href="#">Оставить заявку</a>
                             </div>
                             <div class="burger">
                                 <span class="menu_btn">
@@ -87,7 +87,7 @@
                 <div class="header__wrapper-content">
                     <h1 class="header__wrapper-title">Arqa</h1>
                     <p class="header__wrapper-subtitle">Независимое агенство по аккредитации и экспертизе качества образования</p>
-                    <a class="header__wrapper-button" href="/">Оставить заявку</a>
+                    <a class="header__wrapper-button open_pop_up" id="open_pop_up" href="/">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -244,6 +244,34 @@
             </div>
         </div>
     </footer>
+
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <p>Оставить заявку</p>
+                <form action="">
+                    <input type="text" name="name" placeholder="Ваше ФИО" required>
+                    <input type="text" name="telephone" placeholder="Ваш телефон" required>
+                    <button type="submit">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop_up" id="pop_up1">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body1">
+                <p>Оставить заявку</p>
+                <form action="">
+                    <input type="text" name="name" placeholder="Ваше ФИО" required>
+                    <input type="text" name="telephone" placeholder="Ваш телефон" required>
+                    <button type="submit">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close1">&#10006</div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
